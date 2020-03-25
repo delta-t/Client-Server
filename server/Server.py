@@ -5,7 +5,7 @@ import socket
 
 
 TCP_IP = '127.0.0.1'
-TCP_PORT = 6543
+TCP_PORT = 7777
 BUFFER_SIZE = 1024
 first_answer = b"Hello, client! I am a server. How are you?"
 second_answer = b"Thanks! Good bye!"

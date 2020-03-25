@@ -31,6 +31,6 @@ def chat_with_server(ip, port, buffer):
 
 if __name__ == '__main__':
     TCP_IP = '127.0.0.1'
-    TCP_PORT = 6543
+    TCP_PORT = 7777
     BUFFER_SIZE = 1024
     chat_with_server(ip=TCP_IP, buffer=BUFFER_SIZE, port=TCP_PORT)

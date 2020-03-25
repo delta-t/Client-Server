@@ -29,6 +29,7 @@ def handle_echo(reader, writer):
 
     print("Close the connection")
     writer.close()
+    raise KeyboardInterrupt
 
 
 if __name__ == '__main__':

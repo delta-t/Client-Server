@@ -29,8 +29,9 @@ def tcp_echo_client(first_msg: str,
     writer.close()
 
 
-first_message = "Hello, server! I am a client."
-second_message = "I'm fine. Nice to connect to you!"
-loop = asyncio.get_event_loop()
-loop.run_until_complete(tcp_echo_client(first_message, second_message, 1024, loop))
-loop.close()
+if __name__ == '__main__':
+    first_message = "Hello, server! I am a client."
+    second_message = "I'm fine. Nice to connect to you!"
+    loop = asyncio.get_event_loop()
+    loop.run_until_complete(tcp_echo_client(first_message, second_message, 1024, loop))
+    loop.close()

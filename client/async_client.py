@@ -9,8 +9,7 @@ import asyncio
 
 async def tcp_echo_client(first_message: str, second_message: str, loop):
     reader, writer = await asyncio.open_connection(
-        '127.0.0.1', 8888, loop=loop
-    )
+        '127.0.0.1', 8888, loop=loop)
 
     print(f'Send {first_message!r}')
     writer.write(first_message.encode())
